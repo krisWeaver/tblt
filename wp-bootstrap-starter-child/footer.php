@@ -22,7 +22,9 @@
 				<a href="https://twitter.com/beerleaguetrib" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 				<a href="https://www.instagram.com/thebeerleaguetribune/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			</div>
-
+			<div class="privacy">
+				<a href="https://thebeerleaguetribune.com/privacy-policy/">Privacy Policy</a>
+			</div>
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
 
