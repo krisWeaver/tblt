@@ -20,7 +20,6 @@
 			<div class="social-icons">
 				<a href="https://www.facebook.com/The-Beer-League-Tribune-484862358539112/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 				<a href="https://twitter.com/beerleaguetrib" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-				<a href="https://www.instagram.com/thebeerleaguetribune/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			</div>
 			<div class="privacy">
 				<a href="https://thebeerleaguetribune.com/privacy-policy/">Privacy Policy</a>
