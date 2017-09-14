@@ -5,8 +5,7 @@
 
 get_header(); ?>
 
-			<section id="hero-image">
-				<div class="container-fluid">
+			<section id="hero-image" class="container-fluid">
 					<!-- Hero Image -->
 					<div class="hero-image">
 
@@ -38,10 +37,7 @@ get_header(); ?>
 						</div>
 
 					</div>
-				</div>
 			</section>
-		</div> <!-- End row from header -->
-	</div> <!-- End content fluid container -->
 </div> <!-- End content id -->
 
 

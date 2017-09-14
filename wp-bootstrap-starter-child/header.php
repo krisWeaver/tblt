@@ -110,11 +110,7 @@
 
 	<div id="content" class="site-content">
 
-		<?php if( is_front_page() ) { ?>
-			<div class="fluid-container">
-				<div class="row">
-		<?php } else { ?>
-
+		<?php if( !is_front_page() ) { ?>
 			<div class="container">
 				<div class="row">
 		<?php } ?>

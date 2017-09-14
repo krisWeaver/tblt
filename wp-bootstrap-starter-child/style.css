@@ -13,27 +13,37 @@ Updated: 2017-08-27 22:22:48
 
 /* ------- */
 /* General */
-/* ------- */ 
+/* ------- */
 
 h1, h2, h3, h4, h5, h6 {
 	color: #0977BE;
 	font-family: 'Kanit', sans-serif;
-	font-weight: bold; 
+	font-weight: bold;
 	font-style: italic;
+	font-variant: small-caps;
 }
 
 p {
-	font-size: 20px; 
+	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
+
+a {
+	color: #0573ba;
+}
+
+a:hover {
+	color: #D8D8D8;
+}
+
 
 /* Modal / Popup */
 
 .modal-body {
 	color: #292b2c;
-	font-size: 20px; 
+	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 200; 
+	font-weight: 200;
 }
 
 
@@ -42,12 +52,12 @@ p {
 /* ------ */
 
 .navbar-brand {
-	width: 60%; 
+	width: 60%;
 }
 
 #masthead .navbar-nav > li > a {
 	color: #0272ba;
-	font-size: 18px; 
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 }
@@ -64,17 +74,20 @@ li.current-menu-item a {
 
 /* ------ */
 /* Footer */
-/* ------ */ 
+/* ------ */
 
 footer#colophon {
 	background: #0573ba;
 	color: #f5f9f4;
 }
 
-.social-icons {
-	font-size: 36px; 
+.social-icons a{
+	font-size: 36px;
 }
 
+.social-icons a:hover {
+	color: #D8D8D8 !important;
+}
 
 
 /* --------- */
@@ -85,12 +98,12 @@ footer#colophon {
 .sub-main-title,
 .block-title {
 	text-align: center;
-	padding-bottom: 10px; 
+	padding-bottom: 10px;
 }
 
 .main-content,
 .block-content{
-	font-size: 1.25em; 
+	font-size: 1.25em;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
 }
@@ -105,19 +118,22 @@ footer#colophon {
 	padding-top: 0;
 }
 
-.hero-image {
-	background-image: url('/wp-content/uploads/2017/09/rink2-1.jpg');
+#hero-image {
+	background-image: url('/wp-content/uploads/2017/09/hockey-rink-background.jpg');
 	background-size: cover;
+}
+
+.hero-image {
 	color: #F5F9F4;
 	padding-top: 100px;
-	padding-bottom: 75px; 
-	height: 500px;
+	padding-bottom: 75px;
+	height: 575px;
 }
 
 .hero-image h1 {
 	color: #F5F9F4;
 	text-align: center;
-	font-size: 3em; 
+	font-size: 3em;
 }
 
 .hero-button {
@@ -130,7 +146,7 @@ footer#colophon {
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	border: none; 
+	border: none;
 	margin: 20px;
 	padding: 16px 32px;
 }
@@ -141,14 +157,14 @@ footer#colophon {
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	border: none; 
+	border: none;
 	margin: 20px;
 	padding: 16px 32px;
 }
 
 .intro-text {
 	padding-top: 6em;
-	padding-bottom: 3em; 
+	padding-bottom: 3em;
 }
 
 .how-it-works {
@@ -157,25 +173,25 @@ footer#colophon {
 }
 
 .email-cta {
-	padding: 30px 0 30px 0; 
+	padding: 30px 0 30px 0;
 	background-color: #D8D8D8;
 }
 
 .mc4wp-form-fields .email-value {
-	padding: 10px; 
-	font-size: 18px; 
+	padding: 10px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
 }
 
 .mc4wp-form-fields .submit-button {
 	background-color: #0272ba;
-	border-radius: 5px; 
-	padding: 10px 18px 10px 18px; 
+	border-radius: 5px;
+	padding: 10px 18px 10px 18px;
 	color: #F5F9F4;
 	font-size: 16px;
-	border: none; 
-	font-size: 18px; 
+	border: none;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -193,50 +209,50 @@ footer#colophon {
 
 /* Ninja Fields */
 
-.field-wrap .listselect-wrap>div, 
-.field-wrap .pikaday__container, 
-.field-wrap .pikaday__display, 
-.field-wrap>div input, 
-.field-wrap select, 
+.field-wrap .listselect-wrap>div,
+.field-wrap .pikaday__container,
+.field-wrap .pikaday__display,
+.field-wrap>div input,
+.field-wrap select,
 .field-wrap textarea {
-	padding: 10px; 
-	font-size: 18px; 
+	padding: 10px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 200; 
+	font-weight: 200;
 }
 
 /* Ninja Field Labels */
 
 .nf-field-label label {
-	font-family: 'Montserrat', sans-serif;	
+	font-family: 'Montserrat', sans-serif;
 }
 
 
 /* Contact Us Page Button */
 
-.field-wrap button, 
-.field-wrap input[type=button], 
+.field-wrap button,
+.field-wrap input[type=button],
 .field-wrap input[type=submit] {
 	background-color: #0272ba;
-	border-radius: 5px; 
-	padding: 10px 18px 10px 18px; 
+	border-radius: 5px;
+	padding: 10px 18px 10px 18px;
 	color: #F5F9F4;
 	font-size: 16px;
-	border: none; 
-	font-size: 18px; 
+	border: none;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 
 /* ---------------------- */
 /* Responsive Breakpoints */
-/* ---------------------- */ 
+/* ---------------------- */
 
 @media (max-width: 992px) {
 
 /* ------ */
 /* Header */
-/* ------ */ 
+/* ------ */
 
 	.navbar-brand {
 		width: 100%;
@@ -248,9 +264,9 @@ footer#colophon {
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
-		display: block; 
+		display: block;
 		text-align: center;
-		right: 0
+		right: 0;
 	}
 
 
@@ -261,11 +277,11 @@ footer#colophon {
 
 	.hero-image {
 		height: auto;
-		background-position: center; 
+		background-position: center;
 	}
-	
+
 	.extra {
-		display: none; 
+		display: none;
 	}
 
 	.hero-image-text {
@@ -288,7 +304,7 @@ footer#colophon {
 	}
 
 	.block-content {
-		padding-bottom: 1.5em; 
+		padding-bottom: 1.5em;
 	}
 
 	.email-cta {
@@ -296,4 +312,3 @@ footer#colophon {
 	}
 
 }
-
