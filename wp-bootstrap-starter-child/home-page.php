@@ -30,7 +30,7 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="hero-button">
-									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#share">Share Your Story</button>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#share">Share Your Story Now</button>
 									<?php include 'story.php'; ?>
 								</div>
 							</div>
