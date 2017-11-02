@@ -119,10 +119,6 @@ get_header(); ?>
 
 				</div>
 
-				<div class="october">
-					<h2>Full site launching in October!</h2>
-				</div>
-
 	</div>
 
 
