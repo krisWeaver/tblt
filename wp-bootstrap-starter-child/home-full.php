@@ -40,52 +40,5 @@ get_header(); ?>
     </section>
 </div> <!-- End content id -->
 
-
-<div class="container">
-    <section id="primary" class="content-area col-sm-12">
-        <main id="main" class="site-main" role="main">
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="recent-blog">
-                        <?php
-                            $args = array(
-                                     'category_name' => 'blog',
-                                    'posts_per_page' => 1,
-                            );
-
-                            $recent_posts = wp_get_recent_posts( $args );
-                            ?>
-                            <ul>
-                                <?php
-                                    foreach( $recent_posts as $recent_post ){
-                                        echo '<a href=" ' . get_permalink( $recent_post["ID"] ). ' "><h3>'. $recent_post['post_title'] . '</h3></a>';
-                                        echo '<br />';
-                                        echo $recent_post['the_content'];
-                                        echo get_the_excerpt();
-                                    }
-                                    wp_reset_query();
-                                ?>
-                            </ul>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="featured-player">
-                        Content Goes Here
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="twitter">
-                        <a class="twitter-timeline" href="https://twitter.com/beerleaguetrib?ref_src=twsrc%5Etfw" data-tweet-limit=3>Tweets by BeerLeagueTribune</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                </div>
-            </div>
-
-        </main><!-- #main -->
-    </section><!-- #primary -->
-</div> <!-- End of regular Container  -->
-
 <?php
 get_footer();
