@@ -42,6 +42,7 @@ $the_query = new WP_Query($args);
                     $summary = get_field('intro_text');
                     $excerpt = wp_trim_words($summary, $num_words = 50, $more = '...');
                     echo $excerpt;
+                    echo the_permalink(); 
                 ?>
             </div>
             <div class="view-full-article-button">

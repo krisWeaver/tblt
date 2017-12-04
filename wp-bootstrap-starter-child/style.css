@@ -79,6 +79,12 @@ a:hover {
 /* ------ */
 
 
+header#masthead {
+    background-color: #fff;
+    border: none;
+	box-shadow: none;
+}
+
 #masthead .navbar-nav > li > a {
 	color: #0272ba;
 	font-size: 16px;
@@ -103,6 +109,7 @@ li.current-menu-item a {
 footer#colophon {
 	background: #0573ba;
 	color: #f5f9f4;
+	text-align: center;
 }
 
 .social-icons a{
