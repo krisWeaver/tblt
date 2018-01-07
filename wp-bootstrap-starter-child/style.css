@@ -23,6 +23,18 @@ h1, h2, h3, h4, h5, h6 {
 	font-variant: small-caps;
 }
 
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
 p {
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
@@ -34,6 +46,11 @@ a {
 
 a:hover {
 	color: #D8D8D8;
+}
+
+#masthead .navbar-nav>li>a:hover,
+#masthead .navbar-nav>li.current_page_item>a {
+	color: #555;
 }
 
 #masthead .navbar-nav>li>a {
