@@ -1,12 +1,12 @@
 /*
 Theme Name: Beer League Tribune
-Theme URI: http://www.hellokrisweaver.com
+Theme URI: http://www.krisweaverdesigns.com
 Template: wp-bootstrap-starter
 Author: Kris
-Author URI: http://www.hellokrisweaver.com
+Author URI: http://www.krisweaverdesigns.com
 Description: Child theme for WP Bootstrap Starter
-Version: 1.0.0.1503890568
-Updated: 2017-08-27 22:22:48
+Version: 1.0.0
+
 
 */
 
@@ -24,21 +24,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2.7em;
 }
 
 h2 {
-	font-size: 2em;
+	font-size: 2.2em;
 }
 
 h3 {
 	font-size: 1.8em;
 }
 
-p {
+p,
+li {
 	font-size: 20px;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
 }
+
 
 a {
 	color: #0573ba;
@@ -52,6 +55,7 @@ a:hover {
 #masthead .navbar-nav>li.current_page_item>a {
 	color: #555;
 }
+
 
 #masthead .navbar-nav>li>a {
     padding: 0.5em;
@@ -80,6 +84,17 @@ a:hover {
 	width: 45%;
 }
 
+.navbar-brand img {
+	width: 100%;
+}
+
+/* Mobile Button Nav */
+
+.navbar-light .navbar-toggler {
+	color: #fff;
+	background-color: #0573ba;
+}
+
 
 /* Modal / Popup */
 
@@ -96,19 +111,25 @@ a:hover {
 /* ------ */
 
 
+header#masthead {
+    background-color: #fff;
+    border: none;
+	box-shadow: none;
+}
+
 #masthead .navbar-nav > li > a {
 	color: #0272ba;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 #masthead .navbar-nav > li > a:hover {
-	color: #D8D8D8;
+	color: #555;
 }
 
 li.current-menu-item a {
-	color: #D8D8D8;
+	color: #555;
 	text-decoration: underline;
 }
 
@@ -120,14 +141,25 @@ li.current-menu-item a {
 footer#colophon {
 	background: #0573ba;
 	color: #f5f9f4;
+	text-align: center;
+	padding: 20px 0;
 }
 
 .social-icons a{
 	font-size: 36px;
+	color: #fff;
+}
+
+.privacy a {
+	color: #fff;
 }
 
 .social-icons a:hover {
 	color: #D8D8D8 !important;
+}
+
+.site-info a {
+	color: #fff;
 }
 
 
@@ -140,10 +172,64 @@ footer#colophon {
 	background-image: url(http://thebeerleaguetribune.com/wp-content/uploads/2017/09/login-logo.jpg);
 }
 
+/* -------------- */
+/* New Home Page */
+/* ------------ */
 
-/* --------- */
-/* Home Page */
-/* --------- */
+.recent-articles {
+	background-position: center !important;
+	background-size: cover !important;
+	background-color: #777;
+	padding: 4em;
+	margin-bottom: 2em;
+	color: #fff;
+}
+
+.article-title {
+	background-color: #fff;
+	padding: .25em .75em;
+	margin-left: -4em;
+}
+
+.article-title h2 {
+	margin-left: 1.35em;
+}
+
+.half-blog {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.go-to-blog-button{
+	text-align: center;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.view-full-blog-button > .article-button {
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+/* Instagram feed */
+
+#sbi_load {
+	padding-bottom: 20px;
+}
+
+
+/* ----------------------------- */
+/* Old Home Page / Landing page */
+/* --------------------------- */
 
 .main-title,
 .sub-main-title,
@@ -162,7 +248,7 @@ footer#colophon {
 .hero-image {
 	font-size: 1.5em;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .home #content.site-content {
@@ -196,7 +282,7 @@ footer#colophon {
 	color: #0272ba;
 	font-size: 24px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 	border: none;
 	margin: 20px;
 	padding: 16px 32px;
@@ -252,6 +338,25 @@ footer#colophon {
 }
 
 
+/* ------------------ */
+/* General Blog Page */
+/* ---------------- */
+
+.blog img {
+	width: 100%;
+	height: inherit;
+}
+
+
+/* ------------------ */
+/* Blog Article Page */
+/* ---------------- */
+
+.single-post .post-thumbnail img {
+	width: 100%;
+	height: inherit;
+}
+
 /* --------------- */
 /* Featured Player */
 /* --------------- */
@@ -275,7 +380,7 @@ footer#colophon {
 
 .view-full-article-button {
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 .article-button {
@@ -324,6 +429,18 @@ footer#colophon {
 	border: none;
 	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
+}
+
+/* --------- */
+/* Side Bar */
+/* ------- */
+
+.widget_media_image {
+	margin-bottom: 1em;
+}
+
+.preferred img {
+	width: 100%;
 }
 
 
